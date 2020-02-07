@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration NYSL</title>
+    <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <div class="head">
+          <img src="./resources/pics/logo.png" alt="NYSL logo" height="150px">
+         </div> 	
+      <nav>
+        <ul class="menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About NYSL</a></li>
+          <li><a href="./games.html">Game info</a></li>
+          <li><a href="./rules.html">Rules</a></li>
+          <li><a href="./registration.html" class="active">Registration</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  <main>
+    <center><h1>Registration form:</h1><br></center>
+    <br>
+    <form action="" method="POST" style="width: 100%;">
+      <div class="twee">
+        <h6>First name:</h6><br>
+        <input style="width: 90%;" type="text" name="firstName" placeholder="first Name" pattern="^[a-z A-Z ,.'-]{2,}\s?" required>
+      </div>
+      <div class="twee">
+        <h6>Last name:</h6><br>
+        <input style="width: 90%;" type="text" name="lastName" placeholder="Last Name" required>
+      </div>
+      <div class="een">
+        <h6>Street Address:</h6><br>
+        <input style="width: 95%;" type="text" name="address" placeholder="Street Address" required>
+      </div>  
+      <div class="vier">
+        <h6>City:</h6><br>
+        <input style="width: 80%;" type="text" name="city" placeholder="City" required>
+      </div>
+      <div class="vier">
+        <h6>Zip code:</h6><br>
+        <input style="width: 80%;" type="text" name="zipcode" placeholder="12345" pattern="[0-9]{5}" required>
+      </div>
+      <div class="vier">
+        <h6>Birth Date:</h6><br>
+        <input style="width: 80%;" type="date" name="birthday" required>
+      </div>
+      <div class="vier">
+        <h6>Gender:</h6><br>
+        <input type="radio" name="gender" value="Female" required>Female
+        <span class="right"><input type="radio" name="gender" value="Male" required>Male</span>
+      </div>
+      <div class="een">
+        <h6>Grade:</h6><br>
+          <span class="six"><input type="radio" name="grade" value="Pre-School" required> Pre-School</span>
+          <span class="six"><input type="radio" name="grade" value="1st" required>First Grade</span>
+          <span class="six"><input type="radio" name="grade" value="2nd" required>Second Grade</span>
+          <span class="six"><input type="radio" name="grade" value="3th" required>Third Grade</span>
+          <span class="six"><input type="radio" name="grade" value="4th" required>Fourth Grade</span>
+          <span class="six"><input type="radio" name="grade" value="5th" required>Fifth Grade</span>
+      </div>
+      <div class="een">
+        <h6>Parent/Guardian:</h6><br>
+        <input style="width: 95%;" type="text" name="parent-guardian" placeholder="Parent/Guardian First and Last Name" required>
+      </div>
+      <div class="twee">
+        <h6>Contact Phone:</h6><br>
+        <input style="width: 90%;" type="tel" name="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" placeholder="1234-123-1234"  required>
+      </div>
+      <div class="twee">
+        <h6> Contact Email</h6><br>
+        <input style="width: 90%;" type="email" name="email" placeholder="example@email.com" required>
+      </div>
+        <div class="een"><i>Which elementary schools do you live near?</i><br><br></div>
+        <div class="twee">
+          <h6>Closest elementary school:</h6><br>
+          <select name="school" id="closest" style="width: 90%;"  required>
+            <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+            <option value="Greenbay">Greenbay</option>
+            <option value="Howard A Yeager">Howard A Yeager</option>
+            <option value="Marjorie P Hart">Marjorie P Hart</option>
+            <option value="North">North</option>
+            <option value="South">South</option>
+          </select>
+        </div>
+        <div class="twee">
+          <h6>Second closest school:</h6><br>
+          <select name="school2" id="second" style="width: 90%;"  required>
+            <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+            <option value="Greenbay" selected>Greenbay</option>
+            <option value="Howard A Yeager">Howard A Yeager</option>
+            <option value="Marjorie P Hart">Marjorie P Hart</option>
+            <option value="North">North</option>
+            <option value="South">South</option>
+          </select>
+        </div>
+        <div class="twee">
+          <h6>What position(s) do you normally play?</h6> <i>(Check all that apply)</i><br>
+          <span class="four"><input type="checkbox" name="normalPosition" value="forward">Forward</span>
+          <span class="four"><input type="checkbox" name="normalPosition" value="midfield">Midfield</span>
+          <span class="four"><input type="checkbox" name="normalPosition" value="defense">Defense</span>
+          <span class="four"><input type="checkbox" name="normalPosition" value="Goalkeeper">Goalkeeper</span>
+        </div>
+        <div class="twee">
+          <h6>What position(s) do you want to play?</h6> <i>(Check all that apply)</i><br>
+          <span class="four"><input type="checkbox" name="forward" value="forward">Forward</span>
+          <span class="four"><input type="checkbox" name="midfield" value="midfield">Midfield</span>
+          <span class="four"><input type="checkbox" name="defense" value="defense">Defense</span>
+          <span class="four"><input type="checkbox" name="Goalkeeper" value="Goalkeeper">Goalkeeper</span>
+        </div>
+        <div class="een"  id="position">
+          <br><h4>Uniform<br></h4>
+          <input type="checkbox" name="hasUniform" value="hasUniform">I already have a uniform.
+        </div>
+        <div class="twee"> 
+          <br><h6>Jersey size:</h6><br>
+          <select name="jerseySize" id="jerseySize" style="width: 90%;" required>
+            <option value="Yough Small">Youth Small</option>
+            <option value="Youth Medium">Youth Medium</option>
+            <option value="Youth Large">Youth Large</option>
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+            <option value="Extra-Large">Extra-Large</option>
+          </select>
+        </div>
+        <div class="twee"> 
+          <br><h6>Shorts size:</h6><br>
+          <select name="shortSize" id="shortSize" style="width: 90%;" required>
+            <option value="Yough Small">Youth Small</option>
+            <option value="Youth Medium">Youth Medium</option>
+            <option value="Youth Large">Youth Large</option>
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+            <option value="Extra-Large">Extra-Large</option>
+          </select>
+        </div>
+        <div class="een1">
+          I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League” accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrants participation in the program and/or being transported to or from NYSL sponsored activities, which transportation.
+        <br>
+        <br>
+        By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the cancellation policy and agree to its terms.<br>
+        <br>
+        </div>
+        <div class="twee">
+          <h6>Parent/Guardian (Full name):</h6><br>
+          <input style="width: 90%;" type="text" name="signature" placeholder="John/Jane Smith" required>
+        </div>
+        <div class="twee">
+          <h6>Date</h6><br>
+          <input style="width: 90%;" type="date" name="signedDate" required>
+        </div>
+        <div class="een">
+          <input style="width: 95%; padding: 5px 0; background-color: #9fc875;" type="submit" value="Submit">
+        </div>
+    </form>
+  </main>        
+  <footer>
+    <img style="border:0;width:88px;height:31px"
+              src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+              alt="Valide CSS!" />
+  </footer>
+  </body>
+</html>

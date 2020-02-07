@@ -1,0 +1,258 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+  }
+
+html {
+  box-sizing: border-box;
+  scroll-padding-top: 240px
+}
+
+header {    
+  width: 100%;
+  position: fixed;
+  height: 215px;
+  z-index: 1;
+  background-color: #9fc875;
+  border-bottom: 1px solid seashell;
+  justify-items: center;
+  padding: 0 10px;
+}
+
+table {
+  width: 90%;
+  margin: 0 auto;
+}
+
+nav li a {
+  padding: 13px;
+  border: 1px rgb(116, 177, 55) solid; 
+  text-decoration: none; 
+}
+
+nav li a.active {
+  padding: 13px;
+  border: 1px rgb(116, 177, 55) solid;
+  color: black;
+  background-color: rgb(116, 177, 55);
+}
+
+a:link{
+  color: green;
+}
+
+a:visited{
+  color: darkgreen;  
+  text-decoration: none;
+ }
+
+a:hover {
+  color: aliceblue;
+  background-color: rgb(116, 177, 55);
+}
+
+a:active {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+div.head{  
+  background: url(../pics/header-img.png) no-repeat center;
+  background-size: contain;
+  padding-left: 10%;
+}
+
+h1 {
+    color: rgb(97, 148, 47);
+  }
+
+nav {
+  text-align: center;
+  padding-top: 5px;
+  background-color: #9fc875;
+}
+
+nav li {
+  display: inline-block;  
+  text-transform: uppercase;
+  margin-top: 17px;
+  margin-bottom: 20px;
+}
+
+body {
+  background-attachment: fixed;
+  background-image: url(../pics/field.jpg);
+  background-color: hsla(0,0%,100%,0.95);
+  background-blend-mode: overlay;
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: 90%;
+}
+
+main {
+  position: relative;
+  margin: 0 15% 65px 15%;
+  top: 240px;
+
+}
+
+footer {
+    height: 75px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background: url("../pics/grasfoot.png") repeat-x;
+}
+
+aside {
+    bottom: 50px;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(216, 235, 213);
+    text-align: center;
+    z-index: 1;
+    padding: 5px 0;
+}
+
+.mission{
+  display: flex;
+  background-image: url(../pics/team.jpeg);  
+  background-color: hsla(0,0%,100%,0);
+  background-blend-mode: overlay;
+  background-position: center;
+  height: 300px;
+  align-items: center;
+}
+
+.mission div {  
+  text-align: center;
+  background-color: rgba(169, 199, 138);
+  padding: 10px;
+  flex: 100%;
+}
+
+.indent1 {
+  padding-left: 25px;
+}
+
+.indent2 {
+  padding-left: 45px;
+}
+
+.indent3 {
+  padding-left: 50px;
+  list-style-type: disc;
+}
+
+.vision{
+  display: flex;
+  background-image: url(../pics/soccerGoal.jpg);  
+  background-color: hsla(0,0%,100%,0);
+  background-blend-mode: overlay;
+  background-position: center;
+  height: 300px;
+  align-items: center;
+}
+
+.vision div {  
+  text-align: center;
+  background-color: rgba(169, 199, 138);
+  padding: 10px;
+  flex: 100%;
+}
+
+.genInfo{
+  display: flex;
+  background-image: url(../pics/chicagoNorth.jpg);  
+  background-color: hsla(0,0%,100%,0);
+  background-blend-mode: overlay;
+  background-position: center;
+  height: 300px;
+  align-items: center;
+}
+
+.genInfo div {  
+  text-align: center;
+  background-color: rgba(169, 199, 138);
+  padding: 10px;
+  flex: 100%;
+}
+
+h3 {
+  padding: 15px 15px;
+  margin: 5px -15px;
+  background-color: rgb(169, 199, 138);
+  font-size: 20px;
+}
+
+.data {
+  width: 90%;
+  text-align: left;
+}
+
+h6 {
+  font-size: 16px;
+  font-style: italic;
+  display: inline;
+  background-color: #9fc875;
+}
+
+input, select {
+  margin: 5px 0 20px 0;
+}
+
+.een {
+  width: 100%;
+}
+
+.twee{
+ width: 50%;
+}
+
+.vier {
+  width: 25%;
+}
+
+form {
+  display: flex; 
+  width: 100%;
+  flex-wrap: wrap;
+  justify-items: center;
+  padding-left: 2.5%;
+}
+
+.right {
+  float: right;
+  padding-right: 20%;
+}
+
+.een1 {
+  width: 95%;
+  font-style: italic;
+}
+.six{
+  padding-right: 5%;
+}
+
+.four{
+  padding-right: 8%;
+}
+
+#position {
+  background-color: rgb(216, 235, 213);
+  margin-right: 5%;
+}
+
+.flex {
+  display: flex; 
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer img {
+  padding-top: 40px;
+  float: right;
+}
